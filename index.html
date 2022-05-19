@@ -382,7 +382,7 @@
             this.initialHeight = window.innerHeight
             let that = this
             let xhr = new XMLHttpRequest()
-            xhr.open("get", "https://api.wzxzs.cn/api/select")
+            xhr.open("get", "https://rank.sapi.run/getHeroList.php")
             xhr.send()
             xhr.onreadystatechange = function () {
                 if (xhr.status === 200 && xhr.readyState === 4) {
